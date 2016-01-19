@@ -69,7 +69,7 @@
 <meta property="og:image" content="http://yeluodev.github.io/2016/01/19/风传1-1开发笔记/login.png">
 <meta property="og:image" content="http://yeluodev.github.io/2016/01/19/风传1-1开发笔记/update.png">
 <meta property="og:image" content="http://yeluodev.github.io/2016/01/19/风传1-1开发笔记/me.png">
-<meta property="og:updated_time" content="2016-01-19T09:44:31.626Z">
+<meta property="og:updated_time" content="2016-01-19T09:50:09.285Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风传1.1开发笔记">
 <meta name="twitter:description" content="我这进度还是有够慢的，成长之路漫长啊~
@@ -277,9 +277,10 @@
 <h1 id="1-__u672C_u7248_u8BA1_u5212_u5B9E_u73B0"><a href="#1-__u672C_u7248_u8BA1_u5212_u5B9E_u73B0" class="headerlink" title="1. 本版计划实现"></a>1. 本版计划实现</h1><p>在上个版本主要实现了最基础的对联系人的增删改查。而本版1.1则计划完成用户<code>注册</code>、<code>登录</code>、<code>退出</code>的逻辑以及<code>本地缓存</code>和<code>版本更新</code>的添加    </p>
 <h1 id="2-__u5BF9_u4E0A_u7248_u7684_u4E00_u4E9B_u4FEE_u590D_u8C03_u6574"><a href="#2-__u5BF9_u4E0A_u7248_u7684_u4E00_u4E9B_u4FEE_u590D_u8C03_u6574" class="headerlink" title="2. 对上版的一些修复调整"></a>2. 对上版的一些修复调整</h1><ul>
 <li>联系人列表仍占据登录进入app后的默认首页位置，但由mainactivity调整到mainfragment</li>
-<li>联系人类的字段调整，头像存储BmobFile没有多大意义，改为头像图片上传后的url地址<a id="more"></a>
-<h1 id="3-__u5F00_u53D1_u6D41_u7A0B"><a href="#3-__u5F00_u53D1_u6D41_u7A0B" class="headerlink" title="3. 开发流程"></a>3. 开发流程</h1><h2 id="3-1-_UI_u548C_u540E_u53F0"><a href="#3-1-_UI_u548C_u540E_u53F0" class="headerlink" title="3.1. UI和后台"></a>3.1. UI和后台</h2>这部分以后跳过，缺设计狗就先将就着实现功能先，缺写后台的就只好用bmob(对我这个不太会写后台的，实在是个好东西啊，这里就先不打广告了。。。)</li>
+<li>联系人类的字段调整，头像存储BmobFile没有多大意义，改为头像图片上传后的url地址</li>
 </ul>
+<a id="more"></a>
+<h1 id="3-__u5F00_u53D1_u6D41_u7A0B"><a href="#3-__u5F00_u53D1_u6D41_u7A0B" class="headerlink" title="3. 开发流程"></a>3. 开发流程</h1><h2 id="3-1-_UI_u548C_u540E_u53F0"><a href="#3-1-_UI_u548C_u540E_u53F0" class="headerlink" title="3.1. UI和后台"></a>3.1. UI和后台</h2><p>这部分以后跳过，缺设计狗就先将就着实现功能先，缺写后台的就只好用bmob(对我这个不太会写后台的，实在是个好东西啊，这里就先不打广告了。。。)</p>
 <h2 id="3-2-_Code_u5B9E_u73B0"><a href="#3-2-_Code_u5B9E_u73B0" class="headerlink" title="3.2. Code实现"></a>3.2. Code实现</h2><h3 id="u4E3B_u8981_u65B0_u589E_u5185_u5BB9"><a href="#u4E3B_u8981_u65B0_u589E_u5185_u5BB9" class="headerlink" title="主要新增内容"></a>主要新增内容</h3><ul>
 <li>mainactivity改为底部导航加viewpager，暂为联系人fragment和我fragment</li>
 <li>注册registeractivity</li>
